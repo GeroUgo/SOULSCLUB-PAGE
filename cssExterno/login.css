@@ -1,0 +1,104 @@
+
+/* -------- PAGINA DE CONTACTO -------- */
+
+h1 {
+    text-align: center;
+    margin: 1em 0 0 0;
+    font-size: clamp(25px, 2vw, 30px);
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__wrapper label {
+    font-weight: 600;
+    margin: 2em 0 0.5em 0;
+    width: fit-content;
+    color: var(--brand-color);
+}
+
+.main__button {
+    padding: 0.8em 0;
+    margin: 3em 0 1em 0;
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    border: 2px solid var(--brand-color);
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.main__button:hover {
+    background-color: transparent;
+    outline: 1px solid var(--brand-color);
+    color: var(--brand-color);
+}
+
+.main__wrapper input , .main__wrapper textarea {
+    padding: 1em 0 1em 0.5em;
+    resize: none;
+    background-color: transparent;
+    color: rgb(176, 201, 238);
+    border: 2px solid rgb(176, 201, 238);
+    outline-color: var(--brand-color);
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__wrapper input::placeholder , .main__wrapper textarea::placeholder {
+    color: rgb(176, 201, 238);
+}
+
+.main__wrapper input:is(:valid) , .main__wrapper textarea:is(:valid){
+    border: 2px solid var(--brand-color);
+    color: var(--brand-color);
+}
+
+/* RESET DE CONTRASEÑA */
+
+.wrapper--password-account, .wrapper--account a {
+    text-decoration: none;
+    color: var(--brand-color);
+    font-size: clamp(10px, 1.5vh, 20px);
+}
+
+.wrapper--password {
+    padding-bottom: .6em;
+}
+
+.wrapper--account {
+    text-align: center;
+}
+
+/* -------- PAGINA DE CONTACTO QUERIES -------- */
+
+@media screen and (min-width:1000px) {
+    .main__container {
+        max-width: 100%;
+    }
+
+    .main__form-container {
+        max-width: 30%;
+        width: 100%;
+        margin: auto;
+        border-bottom: 2px solid var(--brand-color);
+    }
+
+    .wrapper--account {
+        padding-bottom: 6em;
+    }
+
+}
+
+/* -------- PAGINA DE CONTACTO END -------- */

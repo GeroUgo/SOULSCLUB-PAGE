@@ -1,0 +1,143 @@
+
+
+.main__producto-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__producto-images-container {
+    max-width: 100dvw;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.main__producto-images-container img {
+    max-width: 100dvw;
+    width: 100%;
+}
+
+.main__producto-datos-container {
+    max-width: 90dvw;
+    width: 100%;
+    padding: .7em 1em 0 0;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+/* PRIMEROS DATOS */
+
+.main__producto-datos-primeros-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__producto-datos-primeros h1 {
+    font-size: clamp(10px 2vh, 20px);
+    padding-bottom: .2em;
+}
+
+.main__producto-datos-primeros p {
+    padding-bottom: .8em;
+}
+
+/* COLORES */
+
+.main__producto-colores-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CARRITO */
+
+.main__button-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.main__button-form button {
+    max-width: 100%;
+    width: 100%;
+    height: 3em;
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    margin: 2em 0 2em 0;
+    cursor: pointer;
+}
+
+.main__button-form button:is(:hover, :active) {
+    opacity: .7;
+}
+
+/* DETAILS */
+
+summary::marker {
+    display: none; /* Oculta la flecha */
+}
+
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none; /* Elimina cualquier viñeta o lista predeterminada */
+}
+
+.main__datos-principales-details {
+    max-width: 100%;
+    width: 100%;
+    border-bottom: .2px solid #452b1a38;
+    padding: .9em 0 .9em 0;
+}
+
+.main__datos-principales-details  ul,
+.main__datos-principales-details p {
+    padding-top: .7em;
+    list-style: none;
+}
+
+.main__datos-principales-details summary:after{
+    display: flex;
+    content: "+";
+}
+
+.main__datos-principales-details[open] summary::after{
+    display: flex;
+    content: "-";
+}
+
+/* ------------------ MEDIA QUERIES -------------------- */
+
+@media screen and (min-width: 1000px) {
+    .main__producto-container {
+        flex-direction: row;
+    }
+
+    .main__producto-images-container {
+        max-width: 66dvw;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .3em;
+        padding: 1em 1em 0 1em;
+    }
+
+    .main__producto-images-container img {
+        max-width: 33dvw;
+        width: 100%;
+    }
+
+    .main__producto-datos-container {
+        max-width: 33dvw;
+        width: 100%;
+        height: 100dvh;
+        position: sticky;
+        top: 5em;
+        padding: .7em 1em 0 0;
+        margin: 0;
+    }
+}
+
+
+

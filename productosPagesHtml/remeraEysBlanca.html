@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP SOULSCLUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- Hoja de estilo general (para el nav, footer, y otros componentes comunes) -->
+        <link rel="stylesheet" href="../css/styles.css">
+    
+        <!-- Hoja de estilo específica para esta página -->
+        <link rel="stylesheet" href="../productosPagesCss/remeraEysBlanca.css">
+        <script src="../javascript/scripts.js"></script>
+    <meta name="description" content="Es una pagina para marca de ropa ARGENTINA, llamada SOULSCLUB">
+</head>
+<body>
+    <header class="header" id="header">
+        <input type="checkbox" name="" id="open-menu" class="header__bgmenu-checkbox">
+        <label for="open-menu" class="header__bgmenu-label" aria-label="boton para desplegar menu de navegacion en movil">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!------------ NAV ------------>
+        <nav class="header__nav-container" role="navigation">
+            <div class="header__nav-closemenu-container">
+                <label for="open-menu"><i class="fa-solid fa-xmark" id="xicon2"></i></label>
+            </div>
+            <ul class="header__nav-list" >
+                <li class="header__nav-item"><a href="../index.html">HOME</a></li>
+                <li class="header__nav-item nav-item--shop"><a href="../html/shop.html">SHOP</a></li>
+                <li class="header__nav-item"><a href="../html/faqs.html">FAQS</a></li>
+                <li class="header__nav-item"><a href="../html/contact.html">CONTACT</a></li>
+            </ul>
+            <div class="header__nav-login-container" >
+                <a href="../paginasExternas/login.html" class="header__nav-login-link">
+                    <i class="fas fa-user"></i>
+                    <h2>Iniciar sesion</h2>
+                </a>
+            </div>
+            <!-- <div class="header__nav-shop-container">
+                <ul class="header__nav-shop-list">
+                    <li class="header__nav-shop-items">REMERAS</li>
+                    <li class="header__nav-shop-items">PANTALONES</li>
+                    <li class="header__nav-shop-items">BUZOS</li>
+                    <li class="header__nav-shop-items">MUSCULOSAS</li>
+                    <li class="header__nav-shop-items">NEW IN</li>
+                </ul>
+            </div> -->
+        </nav>
+        <div class="header__logo-container" aria-label="logo soulsclub">
+            <a href="index.html" class="header__logo-link">
+                <img src="../images/soulsclublogo2.png" alt="LOGO DE SOULSCLUB" class="header__logo">
+            </a>
+        </div>
+        <div class="header__interaccion-container">
+            <!-- Barra de búsqueda -->
+            <div class="header__interaccion-searchbar-container">
+                <div class="header__interaccion-searchbar" aria-label="barra de búsqueda">
+                    <form action="search.html" method="GET" class="header__interaccion-searchbar-form">
+                        <input type="text" name="q" class="header__interaccion-searchbar-item" placeholder="Busca algo..." autocomplete="off">
+                        <button type="submit" class="header__interaccion-searchbar-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M21.71 20.29l-5.4-5.4A7.92 7.92 0 0018 10a8 8 0 10-8 8 7.92 7.92 0 004.88-1.69l5.4 5.4a1 1 0 001.42-1.41zM10 16a6 6 0 116-6 6 6 0 01-6 6z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header__interaccion-login" >
+                <a href="../paginasExternas/login.html" class="header__interaccion-login-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <div class="header__interaccion-cart">
+
+                <input type="checkbox" class="header__interaccion-cart-checkbox" id="cartcheckbox">
+                <label for="cartcheckbox" class="header__interaccion-cart-icon"><i class="fas fa-shopping-cart"></i></label>
+                <div class="header__interaccion-cart-menu">
+                    <div class="header__interaccion-cart-wrapper">
+                        <h2 class="header__interaccion-cart-menu-title">CARRITO DE COMPRAS</h2>
+                        <div class="header__interaccion-cart-icon-container">
+                            <label for="cartcheckbox"><i class="fa-solid fa-xmark" id="xicon"></i></label>
+                        </div>
+                        <div class="header__interaccion-cart-msj-container">
+                            <p>El carrito esta vacio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="" class="header__interaccion-cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!------------ MAIN ------------>
+    <main class="main" id="main">
+        <div class="main__producto-container">
+            <section class="main__producto-images-section">
+                <div class="main__producto-images-container">
+                    <img src="../productosPagesImages/1.webp" alt="">
+                    <img src="../productosPagesImages/2.webp" alt="">
+                    <img src="../productosPagesImages/3.webp" alt="">
+                    <img src="../productosPagesImages/4.webp" alt="">
+                </div>
+            </section>
+
+            <section class="main__producto-datos-container">
+                <div class="main__producto-datos-primeros-container">
+                    <div class="main__producto-datos-primeros">
+                        <h1>Remera "EYS" Blanca</h1>
+                        <p>$25.000</p>
+                    </div>
+                    <div>
+                        <p>3 cuotas sin interes</p>
+                    </div>
+                </div>
+                <div class="main__producto-colores-container">
+                    <p>COLORES</p>
+                    <div class="main__producto-colores-input-container">
+                        <input type="radio" name="radio">
+                        <input type="radio" name="radio">
+                    </div>
+                </div>
+                <div class="main__button-container">
+                    <form action="" class="main__button-form">
+                        <button>AGREGAR AL CARRITO</button>
+                    </form>
+                </div>
+
+                <div class="main__datos-principales-container">
+                    <details class="main__datos-principales-details">
+                        <summary class="main__datos-principales-summary">Descripcion</summary>
+                        <ul>
+                            <li>Remera Oversize</li>
+                            <li>Etiquetas de la marca</li>
+                            <li>Costuras reforzadas</li>
+                        </ul>
+                    </details>
+                    <details class="main__datos-principales-details">
+                        <summary class="main__datos-principales-summary">Medios de pago</summary>
+                        <p>Credito, Debito, Transeferencia (Hasta 3 cuotas sin interes)</p>
+                    </details>
+                    <details class="main__datos-principales-details">
+                        <summary class="main__datos-principales-summary">Medios de envio</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eum praesentium quisquam nulla corporis itaque sit velit quidem asperiores tenetur ut, labore similique doloribus quibusdam omnis cumque alias assumenda vero.</p>
+                    </details>
+                    <details class="main__datos-principales-details">
+                        <summary class="main__datos-principales-summary">Mas info</summary>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem eum praesentium quisquam nulla corporis itaque sit velit quidem asperiores tenetur ut, labore similique doloribus quibusdam omnis cumque alias assumenda vero.</p>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn">↑</a>
+
+    <!------------ FOOTER ------------>
+    <footer class="footer" id="footer">
+        <section class="footer__firstsection-container">
+            <div class="footer__firstsection-newsletter-container" aria-label="seccion de news letter">
+                <h2 class="footer__firstsection-newsletter-title">SUSCRIBE TO OUR NEWS LETTER!</h2>
+                <form class="footer__firstsection-newsletter-input-container">
+                    <input type="email" name="email" id="" class="footer__firstsection-newsletter-input" placeholder="Escribe tu mail...">
+                    <button class="footer__firstsection-newsletter-button" aria-label="button to send email for newsletter">
+                        <i class="fas fa-paper-plane"></i> 
+                    </button>             
+                </form>
+                <div class="footer__firstsection-redes-container">
+                    <a href="https://www.instagram.com/soulsclub.ar/" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer__firstsection-redirecciones-container redirecciones-container--primarias" aria-label="redirecciones a las otras paginas">
+                <a href="../index.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">INICIO</a>
+                <a href="../html/shop.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">PRODUCTOS</a>
+                <a href="../html/faqs.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">FAQS</a>
+                <a href="../html/contact.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">CONTACTO</a>
+            </div>
+            <!--  
+            <div class="footer__firstsection-redirecciones-container redirecciones-container--secundarias" aria-label="redirecciones secundarias">
+                <a href="" class="footer__firstsection-redirecciones-links redirecciones--secundarias">TERMINOS Y CONDICIONES</a>
+                <a href="" class="footer__firstsection-redirecciones-links redirecciones--secundarias">POLITICAS DE DEVOLUCION</a>
+            </div> 
+            -->
+        </section>
+        <section class="footer__secondsection-container">
+            <div class="footer__secondsection-wrapper">
+                <p class="footer__secondsection-text">© 2024 Soulsclub. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos ingrese aqui.</p>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

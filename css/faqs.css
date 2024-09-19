@@ -1,0 +1,86 @@
+/* -------- PAGINA DE PREGUNTAS FRECUENTES -------- */
+
+.main__details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 0;
+    max-width: 95%;
+    margin: auto;
+    font-size: 16px;
+}
+
+.main__details-title {
+    padding: 0 0 2em 0;
+    font-size: 1.8em;
+    max-width: 80%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.main__details {
+    max-width: 100%;
+    width: 100%;
+    background-color: #775844;
+    margin: 5px;
+}
+
+.main__details[open] {
+    background-color: var(--brand-color);
+}
+
+.main__details p {
+    padding: 1em 0 1em 0;
+    margin: auto;
+    max-width: 91%;
+    border-top: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.main__details summary {
+    list-style: none; /* Elimina el estilo de lista que incluye la flecha en algunos navegadores */
+    font-weight: 600;
+    padding: 1em;
+    color: var(--secondary-color);
+}
+
+details summary::before {
+    content: "▶"; /* Flecha personalizada */
+    font-size: 1em;
+    color: var(--secondary-color); /* Color de la flecha */
+    display: inline-block;
+    margin-right: 8px; /* Espacio entre la flecha y el texto */
+    transition: transform 0.3s ease; /* Transición suave para la rotación */
+}
+
+details[open] summary::before {
+    transform: rotate(90deg); /* Rotar la flecha cuando el details está abierto */
+}
+
+/* -------- PAGINA DE PREGUNTAS FRECUENTES QUERIES -------- */
+
+@keyframes openbgmenu3 {
+
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 100%;
+    }
+    
+}
+
+@media screen and (min-width:1000px) {
+    .main__details-container {
+        max-width: 45%;
+        font-size: 17px;
+    }
+    
+    .main__details-title {
+        font-size: 2em;
+    }
+}
+
+/* -------- PAGINA DE PREGUNTAS FRECUENTES END -------- */

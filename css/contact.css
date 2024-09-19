@@ -1,0 +1,175 @@
+/* -------- PAGINA DE CONTACTO -------- */
+
+.main__section-contact-container {
+    margin: 3em 0
+}
+
+#contact-title {
+    text-align: center;
+    text-decoration: underline;
+    padding: 1em 0;
+    font-size: clamp(25px, 2vw, 30px);
+    color: var(--brand-color);
+}
+
+.main__contact-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: auto;
+}
+
+.main__contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__contact-wrapper label {
+    font-weight: 600;
+    margin: 2em 0 0.5em 0;
+    width: fit-content;
+    color: var(--brand-color);
+}
+
+.main__contact-button {
+    padding: 0.8em 0;
+    margin: 1em 0 1em 0;
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    border-radius: 8px;
+    border: 2px solid var(--brand-color);
+}
+
+.main__contact-button:hover {
+    background-color: transparent;
+    outline: 1px solid var(--brand-color);
+    color: var(--brand-color);
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.main__contact-wrapper input , .main__contact-wrapper textarea {
+    padding: 1em 0 1em 0.5em;
+    resize: none;
+    background-color: transparent;
+    color: rgb(176, 201, 238);
+    border: 2px solid rgb(176, 201, 238);
+    outline-color: var(--brand-color);
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main__contact-wrapper input::placeholder , .main__contact-wrapper textarea::placeholder {
+    color: rgb(176, 201, 238);
+}
+
+.main__contact-wrapper input:is(:valid) , .main__contact-wrapper textarea:is(:valid){
+    border: 2px solid var(--brand-color);
+    color: var(--brand-color);
+}
+
+/* FORM VALIDACION */
+
+.error {
+    color: #e58c8c;
+}
+
+.valido {
+    color: #95cca5;
+}
+
+.error, .valido {
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+/* ----- SECCION DE DATOS DE CONTACTO ----- */
+
+.main__contact-datos-container {
+    margin-top: 3em;
+}
+
+.main__contact-datos-container h2 {
+    text-align: center;
+    color: var(--brand-color);
+    text-decoration: underline;
+}
+
+.main__contact-politics-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5em 0 2.5em 0;
+}
+
+.main__contact-politics-container a {
+    text-decoration: none;
+    color: var(--brand-color);
+    font-size: 1.1em;
+}
+
+.main__contact-politics-container a:hover {
+    text-decoration: underline;
+}
+
+.main__contact-redes-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__contact-redes-container {
+    display: flex;
+    gap: 0.5em;
+    padding: 0.3em;
+    font-size: 1.2em;
+}
+
+.main__contact-redes-container p  {
+    color: var(--brand-color);
+}
+
+.main__contact-redes-container p strong {
+    text-decoration: underline;
+}
+
+.main__contact-redes-container a {
+    text-decoration: none;
+    color: var(--brand-color);
+}
+
+.main__contact-mensajes-contacto-container {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+.main__contact-mensajes-contacto-container:has(h3), .main__contact-mensajes-atencion-container:has(h3) {
+    padding-bottom: .5em;
+    color: var(--brand-color);
+}
+
+.main__contact-mensajes-contacto-container h3, .main__contact-mensajes-atencion-container h3 {
+    padding-bottom: .5em;
+}
+
+/* -------- PAGINA DE CONTACTO QUERIES -------- */
+
+@media screen and (min-width:1000px) {
+    .main__contact-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 70%;
+        justify-content: center;
+    }
+
+    .main__contact-form-container {
+        max-width: 50%;
+        width: 100%;
+        margin-right: 2em;
+    }
+    
+    .main__contact-form-container , .main__contact-datos-container {
+        margin: 0 1em 0 1em;
+    }
+}
+
+/* -------- PAGINA DE CONTACTO END -------- */

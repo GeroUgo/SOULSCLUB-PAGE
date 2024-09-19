@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Hoja de estilo general (para el nav, footer, y otros componentes comunes) -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Hoja de estilo específica para esta página -->
+    <link rel="stylesheet" href="../cssExterno/login.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <input type="checkbox" name="" id="open-menu" class="header__bgmenu-checkbox">
+        <label for="open-menu" class="header__bgmenu-label" aria-label="boton para desplegar menu de navegacion en movil">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!------------ NAV ------------>
+        <nav class="header__nav-container header__nav-container-desktop" role="navigation">
+            <div class="header__nav-closemenu-container">
+                <label for="open-menu"><i class="fa-solid fa-xmark" id="xicon2"></i></label>
+            </div>
+            <ul class="header__nav-list" >
+                <li class="header__nav-item"><a href="../index.html">HOME</a></li>
+                <li class="header__nav-item nav-item--shop"><a href="../shop.html">SHOP</a></li>
+                <li class="header__nav-item"><a href="../faqs.html">FAQS</a></li>
+                <li class="header__nav-item"><a href="../contact.html">CONTACT</a></li>
+            </ul>
+            <div class="header__nav-login-container" >
+                <a href="paginasExternas/login.html" class="header__nav-login-link">
+                    <i class="fas fa-user"></i>
+                    <h2>Iniciar sesion</h2>
+                </a>
+            </div>
+        </nav>
+        <div class="header__logo-container" aria-label="logo soulsclub">
+            <a href="../index.html" class="header__logo-link">
+                <img src="../images/soulsclublogo2.png" alt="LOGO DE SOULSCLUB" class="header__logo">
+            </a>
+        </div>
+        <div class="header__interaccion-container">
+            <!-- Barra de búsqueda -->
+            <div class="header__interaccion-searchbar-container">
+                <div class="header__interaccion-searchbar" aria-label="barra de búsqueda">
+                    <form action="search.html" method="GET" class="header__interaccion-searchbar-form">
+                        <input type="text" name="q" class="header__interaccion-searchbar-item" placeholder="Busca algo..." autocomplete="off">
+                        <button type="submit" class="header__interaccion-searchbar-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M21.71 20.29l-5.4-5.4A7.92 7.92 0 0018 10a8 8 0 10-8 8 7.92 7.92 0 004.88-1.69l5.4 5.4a1 1 0 001.42-1.41zM10 16a6 6 0 116-6 6 6 0 01-6 6z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header__interaccion-login" >
+                <a href="login.html" class="header__interaccion-login-link">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <div class="header__interaccion-cart">
+
+                <input type="checkbox" class="header__interaccion-cart-checkbox" id="cartcheckbox">
+                <label for="cartcheckbox" class="header__interaccion-cart-icon"><i class="fas fa-shopping-cart"></i></label>
+                <div class="header__interaccion-cart-menu">
+                    <div class="header__interaccion-cart-wrapper">
+                        <h2 class="header__interaccion-cart-menu-title">CARRITO DE COMPRAS</h2>
+                        <div class="header__interaccion-cart-icon-container">
+                            <label for="cartcheckbox"><i class="fa-solid fa-xmark" id="xicon"></i></label>
+                        </div>
+                        <div class="header__interaccion-cart-msj-container">
+                            <p>El carrito esta vacio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="" class="header__interaccion-cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!------------ MAIN ------------>
+    <main class="main" id="main">
+        <div class="main__container">
+            <h1>Iniciar sesion</h1>
+            <form class="main__form-container">
+                <div class="main__wrapper wrapper--email">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" required placeholder="Ejemplo@gmail.com">
+                </div>
+                <div class="main__wrapper wrapper--password">
+                    <label for="contraseña">CONTRASEÑA</label>
+                    <input type="password" name="contraseña" id="contraseña" required placeholder="Tu contraseña...">
+                </div>
+                <a href="cambiarContraseña.html" class="wrapper--password-account wrapper--password"><p>¿Olvidaste tu contraseña?</p></a>
+                <div class="main__wrapper">
+                    <button class="main__button">Iniciar sesión</button>
+                    <p class="wrapper--password-account wrapper--account">¿No tenes cuenta? <a href="crearCuenta.html">Crear cuenta.</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!------------ FOOTER ------------>
+    <footer class="footer" id="footer">
+        <section class="footer__firstsection-container">
+            <div class="footer__firstsection-newsletter-container" aria-label="seccion de news letter">
+                <h2 class="footer__firstsection-newsletter-title">SUSCRIBE TO OUR NEWS LETTER!</h2>
+                <form class="footer__firstsection-newsletter-input-container">
+                    <input type="email" name="email" id="" class="footer__firstsection-newsletter-input" placeholder="Escribe tu mail...">
+                    <button class="footer__firstsection-newsletter-button" aria-label="button to send email for newsletter">
+                        <i class="fas fa-paper-plane"></i> 
+                    </button>             
+                </form>
+                <div class="footer__firstsection-redes-container">
+                    <a href="https://www.instagram.com/soulsclub.ar/" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer__firstsection-redirecciones-container redirecciones-container--primarias" aria-label="redirecciones a las otras paginas">
+                <a href="../index.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">INICIO</a>
+                <a href="../shop.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">PRODUCTOS</a>
+                <a href="../faqs.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">FAQS</a>
+                <a href="../contact.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">CONTACTO</a>
+            </div>
+            <!--  
+            <div class="footer__firstsection-redirecciones-container redirecciones-container--secundarias" aria-label="redirecciones secundarias">
+                <a href="" class="footer__firstsection-redirecciones-links redirecciones--secundarias">TERMINOS Y CONDICIONES</a>
+                <a href="" class="footer__firstsection-redirecciones-links redirecciones--secundarias">POLITICAS DE DEVOLUCION</a>
+            </div> 
+            -->
+        </section>
+        <section class="footer__secondsection-container">
+            <div class="footer__secondsection-wrapper">
+                <p class="footer__secondsection-text">© 2024 Soulsclub. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos ingrese aqui.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="../javascript/scripts.js"></script>
+</body>
+</html>

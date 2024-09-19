@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #fdfdfd;
+}
+
+html, a, body,  header, main, footer, li, ul, ol, div, p, h1, h2, h3, h4, img, form, button, input {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #48e;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    z-index: 100;
+  }
+  
+  .scroll-to-top:hover {
+    opacity: 0.7;
+  }
+
+/* -------- HEADER -------- */
+
+.header {
+    display: grid;
+    grid-template-columns: 33%, 33% , 33%;
+    height: 4rem;
+    background-color: #48e;
+    text-align: center;
+}
+
+.header__bgmenu-checkbox {
+    display: none;
+}
+
+.header__bgmenu-label {
+    position: absolute;
+    font-size: 2rem;
+    left: 0.7em;
+    color: #fdfdfd;
+    z-index: 20;
+    align-self: center;
+}
+
+.header__bgmenu-label:hover {
+    cursor: pointer;
+}
+
+.header__nav-container {
+    display: none;
+    background-color: #fdfdfd;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 40vh;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.header__nav-list a {
+    color: #48e;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+.header__nav-item a:not(:is(:hover , :active)) {
+    text-decoration: none;
+}
+
+.header__bgmenu-checkbox:checked ~ .header__nav-container {
+    display: flex;
+    transform: translateX(100%);
+    animation: openbgmenu .7s ease-out forwards alternate; 
+}
+
+.header__bgmenu-checkbox:checked ~ .header__bgmenu-label , .header__interaccion-login {
+    color: #48e;
+}
+
+.header__bgmenu-checkbox:checked ~ body {
+    overflow: hidden;
+}
+
+.header__interaccion-searchbar {
+    display: none;
+}
+
+/* LOGO */
+.header__logo-container {
+    display: flex;
+    align-items: center;  /* Centra el logo verticalmente */
+    justify-content: center; /* Centra el logo horizontalmente si es necesario */
+    z-index: 100;
+}
+
+.header__logo {
+    max-width: 60%;   /* La imagen se ajusta al ancho del contenedor */
+    max-height: 100%;  /* La imagen no sobrepasa la altura del contenedor */
+    height: auto;      /* Mantiene la proporción de la imagen */
+    width: auto;       /* Asegura que no se distorsione en su ancho */
+}
+
+.header__interaccion-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    position: static;
+}
+
+.header__interaccion-cart{
+    display: flex;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: auto;
+    right: 1em;
+    font-size: 1.5em;
+}
+
+.header__interaccion-cart-link {
+    color: #fdfdfd;
+}
+     
+.header__interaccion-login {
+    display: none;
+    position: absolute;
+    color: #48e;
+    bottom: -51em;
+    left: 3em;
+}
+
+.header__interaccion-login a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: #48e;
+    text-decoration: underline;
+}
+
+.header__interaccion-login a:not(:is(:hover , :active)) {
+    text-decoration: none;
+}
+
+.header__bgmenu-checkbox:checked ~ .header__interaccion-container .header__interaccion-login {
+    display: flex;
+}
+
+/* -------- HEADER QUERIES -------- */
+
+@keyframes openbgmenu {
+    0% {
+        transform: translateX(-100%); 
+    }
+    100% {
+        transform: translateX(0); 
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    .header {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: start;
+        justify-content: start;
+        justify-content: space-around;
+    }
+
+    .header__bgmenu-label {
+        display: none;
+    }
+
+    .header__nav-container {
+        display: flex;
+        background-color: transparent;
+        position: relative;
+        width: fit-content;
+        height: 100vh;
+    }
+    
+    .header__nav-list {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        gap: 1em;
+        list-style: none;
+        margin: 0;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .header__nav-list a {
+        color: #fdfdfd;
+    }
+
+    .header__logo-container {
+        display: flex;
+        align-items: center;  /* Centra el logo verticalmente */
+        justify-content: center; /* Centra el logo horizontalmente si es necesario */
+        z-index: 100;
+    }
+    
+    .header__logo {
+        max-width: 100%;   /* La imagen se ajusta al ancho del contenedor */
+        max-height: 100%;  /* La imagen no sobrepasa la altura del contenedor */
+        height: auto;      /* Mantiene la proporción de la imagen */
+        width: auto;       /* Asegura que no se distorsione en su ancho */
+    }
+
+    .header__interaccion-login {
+        display: flex;
+        position: static;
+        color: #fdfdfd;
+        bottom: -51em;
+        left: 3em;
+    }
+
+    .header__interaccion-login a {
+        color: #fdfdfd;
+    }
+
+    .header__interaccion-cart {
+        display: flex;
+        position: static;
+        justify-content: start;
+        align-items: start;
+        color: rgb(255, 255, 255);
+        font-size: 1.5em;
+        margin: 0;
+    }
+}

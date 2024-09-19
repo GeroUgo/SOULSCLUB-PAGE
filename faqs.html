@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP SOULSCLUB</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Hoja de estilo general (para el nav, footer, y otros componentes comunes) -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Hoja de estilo específica para esta página -->
+    <link rel="stylesheet" href="css/faqs.css">
+    <meta name="description" content="Es una pagina para marca de ropa ARGENTINA, llamada SOULSCLUB">
+</head>
+<body>
+    <header class="header" id="header">
+        <input type="checkbox" name="" id="open-menu" class="header__bgmenu-checkbox">
+        <label for="open-menu" class="header__bgmenu-label" aria-label="boton para desplegar menu de navegacion en movil">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!------------ NAV ------------>
+        <nav class="header__nav-container header__nav-container-desktop" role="navigation">
+            <div class="header__nav-closemenu-container">
+                <label for="open-menu"><i class="fa-solid fa-xmark" id="xicon2"></i></label>
+            </div>
+            <ul class="header__nav-list" >
+                <li class="header__nav-item"><a href="index.html">HOME</a></li>
+                <li class="header__nav-item nav-item--shop"><a href="shop.html">SHOP</a></li>
+                <li class="header__nav-item"><a href="faqs.html">FAQS</a></li>
+                <li class="header__nav-item"><a href="contact.html">CONTACT</a></li>
+            </ul>
+            <div class="header__nav-login-container" >
+                <a href="paginasExternas/login.html" class="header__nav-login-link">
+                    <i class="fas fa-user"></i>
+                    <h2>Iniciar sesion</h2>
+                </a>
+            </div>
+        </nav>
+        <div class="header__logo-container" aria-label="logo soulsclub">
+            <a href="index.html" class="header__logo-link">
+                <img src="images/soulsclublogo2.png" alt="LOGO DE SOULSCLUB" class="header__logo">
+            </a>
+        </div>
+        <div class="header__interaccion-container">
+            <!-- Barra de búsqueda -->
+            <div class="header__interaccion-searchbar-container">
+                <div class="header__interaccion-searchbar" aria-label="barra de búsqueda">
+                    <form action="search.html" method="GET" class="header__interaccion-searchbar-form">
+                        <input type="text" name="q" class="header__interaccion-searchbar-item" placeholder="Busca algo..." autocomplete="off">
+                        <button type="submit" class="header__interaccion-searchbar-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M21.71 20.29l-5.4-5.4A7.92 7.92 0 0018 10a8 8 0 10-8 8 7.92 7.92 0 004.88-1.69l5.4 5.4a1 1 0 001.42-1.41zM10 16a6 6 0 116-6 6 6 0 01-6 6z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="header__interaccion-login" >
+                <a href="paginasExternas/login.html" class="header__interaccion-login-link" aria-label="Boton de login">
+                    <i class="fas fa-user"></i>
+                </a>
+            </div>
+            <div class="header__interaccion-cart">
+
+                <input type="checkbox" class="header__interaccion-cart-checkbox" id="cartcheckbox">
+                <label for="cartcheckbox" class="header__interaccion-cart-icon"><i class="fas fa-shopping-cart"></i></label>
+                <div class="header__interaccion-cart-menu">
+                    <div class="header__interaccion-cart-wrapper">
+                        <h2 class="header__interaccion-cart-menu-title">CARRITO DE COMPRAS</h2>
+                        <div class="header__interaccion-cart-icon-container">
+                            <label for="cartcheckbox"><i class="fa-solid fa-xmark" id="xicon"></i></label>
+                        </div>
+                        <div class="header__interaccion-cart-msj-container">
+                            <p>El carrito esta vacio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a href="" class="header__interaccion-cart-link">
+                    <i class="fas fa-shopping-cart"></i>
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!------------ MAIN ------------>
+    <main class="main" id="main">
+        <div class="main__details-container animate__animated animate__fadeIn">
+            <h2 class="main__details-title">Preguntas Frecuentes</h2>
+
+            <details class="main__details details--1">
+                <summary>¿Qué tipos de ropa ofrece Soulsclub?</summary>
+                <p>En Soulsclub ofrecemos una amplia gama de ropa urbana y casual, incluyendo camisetas, sudaderas, chaquetas, pantalones, y accesorios, todos diseñados con un estilo moderno y auténtico.</p>
+            </details>
+            
+            <details class="main__details details--2">
+                <summary>¿Dónde se fabrican los productos de Soulsclub?</summary>
+                <p>Nuestros productos se fabrican en talleres especializados en moda urbana, con materiales de alta calidad y siguiendo prácticas de producción ética y sostenible.</p>
+            </details>
+            
+            <details class="main__details details--3">
+                <summary>¿Cómo puedo saber cuál es mi talla en Soulsclub?</summary>
+                <p>En la página de cada producto encontrarás una guía de tallas detallada. Te recomendamos medir tu cuerpo y compararlo con las medidas proporcionadas para encontrar tu talla perfecta.</p>
+            </details>
+            
+            <details class="main__details details--4">
+                <summary>¿Cuánto tiempo tarda en llegar mi pedido?</summary>
+                <p>El tiempo de entrega depende de tu ubicación. Los envíos nacionales suelen tardar entre 2 y 5 días hábiles, mientras que los envíos internacionales pueden tardar entre 7 y 15 días hábiles.</p>
+            </details>
+            
+            <details class="main__details details--5">
+                <summary>¿Puedo cambiar o devolver un producto si no me queda bien?</summary>
+                <p>Sí, en Soulsclub aceptamos cambios y devoluciones dentro de los 30 días posteriores a la compra, siempre y cuando el producto esté en perfectas condiciones. Consulta nuestra política de devoluciones para más detalles.</p>
+            </details>
+            
+            <details class="main__details details--6">
+                <summary>¿Cómo puedo cuidar mis prendas de Soulsclub?</summary>
+                <p>Recomendamos lavar las prendas a máquina con agua fría y secarlas al aire libre para prolongar su vida útil. Evita el uso de blanqueadores y la exposición prolongada al sol.</p>
+            </details>
+            
+            <details class="main__details details--7">
+                <summary>¿Ofrecen envíos internacionales?</summary>
+                <p>Sí, en Soulsclub realizamos envíos a varios países alrededor del mundo. Los costos de envío y tiempos de entrega varían según la ubicación.</p>
+            </details>
+            
+            <details class="main__details details--8">
+                <summary>¿Tienen descuentos o promociones especiales?</summary>
+                <p>Sí, periódicamente ofrecemos descuentos y promociones especiales. Te recomendamos suscribirte a nuestro boletín y seguirnos en redes sociales para estar al tanto de nuestras ofertas.</p>
+            </details>
+            
+            <details class="main__details details--9">
+                <summary>¿Cómo puedo contactar con atención al cliente?</summary>
+                <p>Puedes ponerte en contacto con nuestro equipo de atención al cliente a través del correo electrónico soporte@soulsclub.com o mediante nuestro formulario de contacto en la web. Estamos aquí para ayudarte.</p>
+            </details>
+            
+            <details class="main__details details--10">
+                <summary>¿Qué métodos de pago aceptan?</summary>
+                <p>En Soulsclub aceptamos varios métodos de pago, incluyendo tarjetas de crédito y débito, PayPal, y otros sistemas de pago en línea seguros.</p>
+            </details>
+            
+        </div>
+    </main>
+
+    <a href="#" class="scroll-to-top" id="scrollToTopBtn">↑</a>
+
+    <!------------ FOOTER ------------>
+    <footer class="footer" id="footer">
+        <section class="footer__firstsection-container">
+            <div class="footer__firstsection-newsletter-container" aria-label="seccion de news letter">
+                <h2 class="footer__firstsection-newsletter-title">SUSCRIBE TO OUR NEWS LETTER!</h2>
+                <form class="footer__firstsection-newsletter-input-container">
+                    <input type="email" name="email" id="" autocomplete="off" class="footer__firstsection-newsletter-input" placeholder="Escribe tu mail...">
+                    <button class="footer__firstsection-newsletter-button" aria-label="button to send email for newsletter">
+                        <i class="fas fa-paper-plane"></i> 
+                    </button>             
+                </form>
+                <div class="footer__firstsection-redes-container">
+                    <a href="https://www.instagram.com/soulsclub.ar/" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@soulsclubargentina" target="_blank" class="footer__firstsection-redes-items"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer__firstsection-redirecciones-container redirecciones-container--primarias" aria-label="redirecciones a las otras paginas">
+                <a href="index.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">INICIO</a>
+                <a href="shop.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">SHOP</a>
+                <a href="faqs.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">FAQS</a>
+                <a href="contact.html" class="footer__firstsection-redirecciones-links redirecciones--primarias">CONTACTO</a>
+            </div>
+            <!--  
+            <div class="footer__firstsection-redirecciones-container redirecciones-container--secundarias" aria-label="redirecciones secundarias">
+                <a href="" class="footer__firstsection-redirecciones-links redirecciones--secundarias">TERMINOS Y CONDICIONES</a>
+                <a href="" class="footer__firstsection-redirecciones-links redirecciones--secundarias">POLITICAS DE DEVOLUCION</a>
+            </div> 
+            -->
+        </section>
+        <section class="footer__secondsection-container">
+            <div class="footer__secondsection-wrapper">
+                <p class="footer__secondsection-text">© 2024 Soulsclub. Todos los derechos reservados. Defensa de las y los consumidores. Para reclamos ingrese aqui.</p>
+            </div>
+        </section>
+    </footer>
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>

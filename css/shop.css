@@ -1,0 +1,186 @@
+-------- PAGINA DE PRODUCTOS --------
+/*  
+.main__h2-container {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+}
+
+.main__h2-container h2 {
+    color: var(--brand-color);
+    margin: 1.5em 0;
+}
+
+.main__products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--secondary-color);
+    gap: 2em 1em;
+    padding: 0 1em 3em 1em;
+}
+
+-------- PAGINA DE PRODUCTOS QUERIES -------- 
+
+@media screen and (min-width:1000px){
+    .main__products-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+-------- PAGINA DE PRODUCTOS END -------- 
+
+
+
+
+
+
+
+ -------- MAIN SECOND SECTION  -------- 
+
+.main__h2-container {
+    text-decoration: underline;
+}
+
+.main__products-images {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main__products-images:hover {
+    transition: transform 0.4s ease, filter 0.4s ease; 
+    cursor: pointer;
+    transform: scale(0.95); 
+    filter: grayscale(10%);
+}
+
+.main__products-links {
+    text-decoration: none;
+    color: var(--brand-color);
+}
+
+.main__products-links h3:hover , .main__products-links img:hover {
+    opacity: 0.8;
+}
+
+.main__products-links h3 {
+    padding: .5em 0;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.main__products-links p {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+/-------- MAIN SECOND SECTION QUERIES --------
+
+@media screen and (min-width:800px){
+    .main__secondsection-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (min-width:1100px){
+
+    .main__secondsection-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+ */
+
+
+
+ /* -------- MAIN SECOND SECTION  -------- */
+
+.main__secondsection-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.main__secondsection-title {
+    font-size: clamp(20px, 3vw, 30px);
+    text-align: center;
+    padding: 2em 0;
+    color: var(--brand-color);
+}
+
+.main__secondsection-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6em 1em;
+    margin: 0 1em 0 1em;
+}
+
+.main__secondsection-products-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.main__secondsection-products-images {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main__secondsection-products-images:hover {
+    transition: transform 0.4s ease, filter 0.4s ease; /* Transiciones suaves para el tamaño y el filtro */
+    cursor: pointer;
+    transform: scale(0.95); 
+    filter: grayscale(10%);
+}
+
+.main__secondsection-products-links {
+    text-decoration: none;
+    color: var(--brand-color);
+}
+
+.main__secondsection-products-links h3:hover , .main__secondsection-products-links img:hover {
+    opacity: 0.8;
+}
+
+.main__secondsection-products-links h3 {
+    padding: .5em 0;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.main__secondsection-products-links p {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+
+/* BARAR DE BUSQUEDA */
+
+.main__secondsection-container-searchbar {
+    padding: .5em;
+    border-radius: 8px;
+    margin: 0 0 1em 1.1em;
+}
+
+
+/* -------- MAIN SECOND SECTION QUERIES -------- */
+
+@media screen and (min-width:800px){
+    .main__secondsection-wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (min-width:1100px){
+
+    .main__secondsection-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
