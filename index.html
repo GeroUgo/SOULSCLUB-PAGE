@@ -71,7 +71,6 @@
                 </a>
             </div>
             <div class="header__interaccion-cart">
-
                 <input type="checkbox" class="header__interaccion-cart-checkbox" id="cartcheckbox">
                 <label for="cartcheckbox" class="header__interaccion-cart-icon"><i class="fas fa-shopping-cart"></i></label>
                 <div class="header__interaccion-cart-menu">
@@ -81,7 +80,33 @@
                             <label for="cartcheckbox"><i class="fa-solid fa-xmark" id="xicon"></i></label>
                         </div>
                         <div class="header__interaccion-cart-msj-container">
-                            <p>El carrito esta vacio</p>
+                            <p class="header__interaccion-cart-msj">El carrito esta vacio</p>
+                        </div>
+                        <div class="header__interaccion-cart-info-main-container">
+                            <!-- <div class="header__interaccion-cart-info-container">
+                                <div class="header__interaccion-cart-info-wrapper">
+                                    <img class="header__interaccion-cart-info-image" src="images/soulsclub1.png" alt="">
+                                    <div class="header__interaccion-cart-info-containerDos">
+                                        <div class="header__interaccion-cart-info">
+                                            <h2 class="header__interaccion-cart-info-title">Remera "EYS" Blanca</h2>
+                                            <p class="header__interaccion-cart-info-price">$25.000</p>
+                                        </div>
+                                        <div class="header__interaccion-cart-info-cant-container">
+                                            <button class="header__interaccion-cart-info-cant-menos-button">-</button>
+                                            <p class="header__interaccion-cart-info-cant">2</p>
+                                            <button class="header__interaccion-cart-info-cant-mas-button">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__interaccion-cart-info-subtotal-container">
+                                    <p>Subtotal (Sin envio): </p>
+                                    <p>$223.000</p>
+                                </div>
+                                <div class="header__interaccion-cart-info-total-container">
+                                    <p>Total: </p>
+                                    <p>$223.000</p>
+                                </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -98,6 +123,10 @@
 
     <!------------ MAIN ------------>
     <main class="main" id="main">
+        <div class="header__interaccion-cart-mensaje-container">
+            <div class="exitoAlert"><p>Se agrego correctamente!</p></div>
+            <div class="errorAlert"><p>El producto ya esta en el carrito</p></div>
+        </div>
         <section class="main__firstsection-container" aria-label="banner de introduccion a la pagina">
             <h1 class="main__firstsection-title animate__animated animate__flip">SOULSCLUB</h1>
             <button class="main__firstsection-button animate__animated animate__backInLeft" aria-label="ir a ver productos">SHOP</button>

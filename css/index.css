@@ -99,10 +99,10 @@
 }
 
 .main__secondsection-products-images:hover {
-    transition: transform 0.4s ease, filter 0.4s ease; /* Transiciones suaves para el tamaño y el filtro */
+    /* transition: transform 0.4s ease, filter 0.4s ease;  */
     cursor: pointer;
-    transform: scale(0.95); 
-    filter: grayscale(10%);
+    /* transform: scale(0.95); 
+    filter: grayscale(10%); */
 }
 
 .main__secondsection-products-links {
@@ -123,6 +123,66 @@
 .main__secondsection-products-links p {
     font-weight: 600;
     font-size: 1.1em;
+}
+
+/* BOTON DE COMPRA RAPIDA */
+
+.main__secondsection-products-button {
+    margin-top: .6em;
+    padding: .4em;
+    border: 1px solid var(--brand-color);
+    color: var(--brand-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.main__secondsection-products-button:hover {
+    color: var(--secondary-color);
+    background-color: var(--brand-color);
+}
+
+
+/* CARRITO DE COMPRAS */
+
+.carrito__container {
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    border: 1px solid var(--brand-color);
+    z-index: 1000;
+}
+
+.tituloCarrito , .imagenCarrito, .precioCarrito {
+    width: 33%;
+    height: 100%;
+}
+
+
+/* CARRITO DE COMPRAS MENSAJE ERROR */
+
+.carrito__mensaje-error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4em;
+    width: 15em;
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: 1em;
+    left: 0;
+    margin-top: 10em;
+}
+
+.carrito__mensaje-error {
+    font-size: clamp(10px, .8em, 20px );
+    color: red;
+}
+
+/* PRECIO TOTAL */
+
+.precioFinalCarrito {
+    color: var(--brand-color);
 }
 
 /* -------- MAIN SECOND SECTION QUERIES -------- */

@@ -272,6 +272,165 @@ html, a, body,  header, main, footer, li, ul, ol, div, p, h1, h2, h3, h4, img, f
     animation: cartmenu2 .4s ease-out forwards alternate; 
 }
 
+/* CARRITO ESTRUCTURA */
+
+.header__interaccion-cart-info-main-container{
+    position: absolute;
+    left: 0;
+    top: 2.5em;
+    max-width: 90%;
+    width: 100%;
+}
+
+.header__interaccion-cart-info-container {
+    margin: 15px;
+    border: 1px solid var(--brand-color);
+    max-width: 100%;
+    width: 100%;
+}
+
+.header__interaccion-cart-info-wrapper{
+    position: relative;
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.header__interaccion-cart-info-image {
+    max-width: 70px;
+}
+
+.header__interaccion-cart-info-wrapper{
+    margin: 10px;
+}
+
+.header__interaccion-cart-info-title{
+    color: var(--brand-color);
+    font-size: clamp(10px, 1.7vh, 30px);
+}
+
+.header__interaccion-cart-info-price{
+    color: var(--brand-color);
+    font-size: clamp(10px, 1.7vh, 30px);
+}
+
+/* .header__interaccion-cart-info-price::before{
+    content: "x";
+    position: absolute;
+    color: var(--brand-color);
+    right: -4px;
+    top: -10px;
+} */
+
+.header__interaccion-cart-info-containerDos {
+    width: 100%;
+}
+
+.header__interaccion-cart-info {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 .3em;
+}
+
+/* MENSAJE  */
+
+.exitoAlert,
+.errorAlert {
+    display: none;
+}
+
+/* MENSAJE SE AGREGO CON EXITO */
+
+.header__interaccion-cart-mensaje-exito-entrada {
+    display: block;
+    width: fit-content;
+    padding: .8em;
+    margin-top: 2em;
+    position: fixed;
+    left: 0;
+    background-color: rgb(118, 240, 135);
+    color: var(--secondary-color);
+    z-index: 200;
+    border-radius: 0px 10px 10px 0px;
+    transform: translateX(-100%); 
+    animation: exitoEntrada 0.5s ease forwards; 
+} 
+
+.header__interaccion-cart-mensaje-exito-salida {
+    display: block;
+    animation: exitoSalida 0.5s ease forwards; 
+}
+
+/* MENSAJE DE EL PRODUCTO YA ESTA EN EL CARRITO */
+
+.header__interaccion-cart-mensaje-error-entrada {
+    display: block;
+    width: fit-content;
+    padding: .8em;
+    margin-top: 2em;
+    position: fixed;
+    left: 0;
+    background-color: rgb(240, 81, 81);
+    color: var(--secondary-color);
+    z-index: 200;
+    border-radius: 0px 10px 10px 0px;
+    transform: translateX(-100%); 
+    animation: errorEntrada 0.5s ease forwards; 
+}
+
+.header__interaccion-cart-mensaje-error-salida {
+    display: block;
+    animation: errorSalida 0.5s ease forwards; 
+}
+
+
+/* CANTIDAD DE PRENDAS */
+
+.header__interaccion-cart-info-cant-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--brand-color);
+    width: fit-content;
+    margin: 1em;
+}
+
+.header__interaccion-cart-info-cant-menos-button,
+.header__interaccion-cart-info-cant-mas-button{
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header__interaccion-cart-info-cant{
+    color: var(--brand-color);
+    font-size: clamp(10px, 15px, 15px);
+    margin: 0 1em;
+}
+
+/* SUBTOTAL */
+
+.header__interaccion-cart-info-subtotal-container,
+.header__interaccion-cart-info-total-container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--brand-color);
+    font-size: clamp(10px, 1.7vh, 30px);
+    margin: 10px;
+}
+
+.header__interaccion-cart-info-total-container:last-child {
+    font-weight: bold;
+}
+
+/* TOTAL */
+
+.header__interaccion-cart-info-total-container {
+
+}
+
 /* CARRITO MSJ */
 
 .header__interaccion-cart-msj-container {
@@ -322,6 +481,46 @@ html, a, body,  header, main, footer, li, ul, ol, div, p, h1, h2, h3, h4, img, f
 /* LOGO DESKTOP END */
 
 /* -------- HEADER QUERIES -------- */
+
+/* CARRITO */
+
+@keyframes exitoEntrada {
+    from {
+        transform: translateX(-100%); 
+    }
+    to {
+        transform: translateX(0); 
+    }
+}
+
+@keyframes exitoSalida {
+    from {
+        transform: translateX(0%); 
+    }
+    to {
+        transform: translateX(-100); 
+    }
+}
+
+@keyframes errorEntrada {
+    from {
+        transform: translateX(-100%); 
+    }
+    to {
+        transform: translateX(0); 
+    }
+}
+
+@keyframes errorSalida {
+    from {
+        transform: translateX(0%); 
+    }
+    to {
+        transform: translateX(-100); 
+    }
+}
+
+/* MENU HAMBURGUESA */
 
 @keyframes cartmenu {
     0% {
